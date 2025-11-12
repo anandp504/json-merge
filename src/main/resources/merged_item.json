@@ -1,0 +1,101 @@
+{
+  "@context" : "https://raw.githubusercontent.com/beckn/protocol-specifications-new/refs/heads/draft/schema/core/v2/context.jsonld",
+  "@type" : "beckn:Item",
+  "beckn:id" : "ev-charger-ccs2-001",
+  "beckn:descriptor" : {
+    "@type" : "beckn:Descriptor",
+    "schema:name" : "DC Fast Charger - CCS2 (60kW)",
+    "beckn:shortDesc" : "High-speed DC charging station with CCS2 connector",
+    "beckn:longDesc" : "Ultra-fast DC charging station supporting CCS2 connector type with 60kW maximum power output. Features advanced thermal management and smart charging capabilities."
+  },
+  "beckn:category" : {
+    "@type" : "schema:CategoryCode",
+    "schema:codeValue" : "ev-charging",
+    "schema:name" : "EV Charging"
+  },
+  "beckn:availableAt" : [ {
+    "@type" : "beckn:Location",
+    "geo" : {
+      "type" : "Point",
+      "coordinates" : [ 77.5946, 12.9716 ]
+    },
+    "address" : {
+      "streetAddress" : "EcoPower BTM Hub, 100 Ft Rd",
+      "addressLocality" : "Bengaluru",
+      "addressRegion" : "Karnataka",
+      "postalCode" : "560076",
+      "addressCountry" : "IN"
+    }
+  } ],
+  "beckn:availabilityWindow" : [ {
+    "@type" : "beckn:TimePeriod",
+    "schema:startTime" : "09:00:00",
+    "schema:endTime" : "15:00:00"
+  } ],
+  "beckn:rateable" : true,
+  "beckn:rating" : {
+    "@type" : "beckn:Rating",
+    "beckn:ratingValue" : 4.5,
+    "beckn:ratingCount" : 128
+  },
+  "beckn:isActive" : true,
+  "beckn:networkId" : [ "bap.net/ev-charging" ],
+  "beckn:provider" : {
+    "beckn:id" : "ecopower-charging",
+    "beckn:descriptor" : {
+      "@type" : "beckn:Descriptor",
+      "schema:name" : "EcoPower Charging Pvt Ltd"
+    }
+  },
+  "beckn:itemAttributes" : {
+    "@context" : "https://raw.githubusercontent.com/beckn/protocol-specifications-new/refs/heads/draft/schema/EvChargingService/v1/context.jsonld",
+    "@type" : "ChargingService",
+    "connectorType" : {
+      "@id" : "beckn:ConnectorTypeCCS2"
+    },
+    "maxPowerKW" : 70,
+    "minPowerKW" : 10,
+    "socketCount" : 4,
+    "reservationSupported" : true,
+    "serviceLocation" : {
+      "@type" : "beckn:Location",
+      "geo" : {
+        "type" : "Point",
+        "coordinates" : [ 77.5946, 12.9716 ]
+      },
+      "address" : {
+        "streetAddress" : "EcoPower BTM Hub, 100 Ft Rd",
+        "addressLocality" : "Bengaluru",
+        "addressRegion" : "Karnataka",
+        "postalCode" : "560076",
+        "addressCountry" : "IN"
+      }
+    },
+    "amenityFeature" : [ {
+      "@id" : "beckn:AmenityRestaurant"
+    }, {
+      "@id" : "beckn:AmenityRestroom"
+    }, {
+      "@id" : "beckn:AmenityWiFi"
+    } ],
+    "ocppId" : "IN-ECO-BTM-01",
+    "evseId" : "IN*ECO*BTM*01*CCS2*A",
+    "roamingNetwork" : "GreenRoam",
+    "parkingType" : {
+      "@id" : "beckn:ParkingTypeMall"
+    },
+    "connectorId" : "CCS2-A",
+    "powerType" : {
+      "@id" : "beckn:PowerTypeDC"
+    },
+    "connectorFormat" : {
+      "@id" : "beckn:ConnectorFormatCable"
+    },
+    "chargingSpeed" : {
+      "@id" : "beckn:ChargingSpeedFast"
+    },
+    "stationStatus" : {
+      "@id" : "beckn:StationStatusAvailable"
+    }
+  }
+}

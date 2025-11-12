@@ -1,0 +1,19 @@
+{
+  "@context": "https://raw.githubusercontent.com/beckn/protocol-specifications-new/refs/heads/draft/schema/core/v2/context.jsonld",
+  "@type": "beckn:Item",
+  "beckn:id": "ev-charger-ccs2-001",
+  "beckn:availabilityWindow": [
+    {
+      "@type": "beckn:TimePeriod",
+      "schema:startTime": "09:00:00",
+      "schema:endTime": "15:00:00"
+    }
+  ],
+  "beckn:itemAttributes": {
+    "@context": "https://raw.githubusercontent.com/beckn/protocol-specifications-new/refs/heads/draft/schema/EvChargingService/v1/context.jsonld",
+    "@type": "ChargingService",
+    "maxPowerKW": 70,
+    "minPowerKW": 10,
+    "socketCount": 4
+  }
+}

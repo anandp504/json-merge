@@ -1,0 +1,113 @@
+# Compiled class files
+*.class
+
+# Log files
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Maven #
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Gradle #
+.gradle/
+build/
+*/build/
+!gradle/wrapper/gradle-wrapper.jar
+gradle-app.setting
+.gradle-test-kit/
+
+# Eclipse
+.metadata/
+.classpath
+.project
+.settings/
+.loadpath
+
+# IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# IntelliJ
+.idea/
+
+# Logs
+logs/
+
+# Runtime files
+*.pid
+*.seed
+*.pid.lock
+
+# Coverages
+*.coverage
+.coverage
+.coverage.*
+
+# Test results
+TEST-*.xml
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+
+# Build output
+bin/
+build/
+classes/
+
+# Generated files
+generated/
+
+# Local configuration
+*.local
+
+# Backup files
+*~
+*.orig
+
+# Node modules (if present)
+node_modules/
+
